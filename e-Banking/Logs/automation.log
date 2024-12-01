@@ -1,0 +1,16 @@
+04:32:50.661 [main] INFO  testCases.TC_LoginTest_001 - URL is opened
+04:32:50.727 [main] INFO  testCases.TC_LoginTest_001 - Entered username
+04:32:50.764 [main] INFO  testCases.TC_LoginTest_001 - Entered password
+04:32:51.173 [main] INFO  testCases.TC_LoginTest_001 - Login test passed
+19:50:32.410 [main] INFO  testCases.TC_LoginTest_001 - URL is opened
+19:50:32.676 [main] INFO  testCases.TC_LoginTest_001 - Entered username
+19:50:32.769 [main] INFO  testCases.TC_LoginTest_001 - Entered password
+19:50:33.707 [main] INFO  testCases.TC_LoginTest_001 - Login test passed
+19:51:11.944 [main] INFO  testCases.TC_LoginTest_001 - URL is opened
+19:51:15.212 [main] INFO  testCases.TC_LoginTest_001 - Entered username
+19:51:18.299 [main] INFO  testCases.TC_LoginTest_001 - Entered password
+19:51:19.164 [main] INFO  testCases.TC_LoginTest_001 - Login test passed
+19:51:44.331 [main] INFO  testCases.TC_LoginTest_001 - URL is opened
+19:51:53.481 [main] INFO  testCases.TC_LoginTest_001 - Entered username
+19:52:02.573 [main] INFO  testCases.TC_LoginTest_001 - Entered password
+19:52:04.182 [main] INFO  testCases.TC_LoginTest_001 - Login test passed

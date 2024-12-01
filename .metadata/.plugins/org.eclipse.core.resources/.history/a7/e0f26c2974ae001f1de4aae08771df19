@@ -1,0 +1,19 @@
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class AddCustomerPage {
+	
+	WebDriver ldriver;
+	
+	public LoginPage(WebDriver rdriver) // we will receive remote driver from Login test case class
+	{
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+	}
+	
+	
+	// Locators
+
+}

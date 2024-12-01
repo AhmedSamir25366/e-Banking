@@ -1,0 +1,79 @@
+package testCases;
+
+import org.apache.commons.lang3.RandomStringUtils;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import pageObjects.AddCustomerPage;
+import pageObjects.LoginPage;
+
+public class TC_AddCustomerTest_003 extends BaseClass {
+	
+	// Action methods + validations
+	@Test
+	public void addNewCustomer() throws InterruptedException
+	{
+	    // we need 2 page object class in this test case which are (login page object class + customer page object class)
+		
+		// create an object from Login page object class to login the user (first step)
+		LoginPage lp = new LoginPage(driver);
+		lp.setUserName(p.getProperty("username"));
+		logger.info("username is provided");
+		lp.setPassword(p.getProperty("password"));
+		logger.info("password is provided");
+		lp.clickSubmit();
+		
+		Thread.sleep(3000);
+		
+		// create an object from Add customer page object class to create a new customer (second step)
+		AddCustomerPage addcust = new AddCustomerPage(driver);
+		addcust.clickAddNewCustomer();
+		logger.info("Providing customer details");
+		
+		addcust.custName("Pavan");
+		logger.info("password is provided");
+		addcust.custgender("male");
+		addcust.custdob("10", "15", "1985");
+		addcust.custaddress("INDIA");
+		addcust.custcity("HYD");
+		addcust.custstate("AP");
+		addcust.custpinno("5000074");
+		addcust.custtelephoneno("987890091");
+		String email = randomestring() + "gmail.com";
+		addcust.custemailid(email);
+		addcust.custsubmit();
+		
+		
+		// validating whether the page contains a particular message or not after creating a new customer
+		
+		
+		logger.info("Validate presence of confirmation message");
+		boolean res = driver.getPageSource().contains("Customer Registered Successfully!!!");
+		if(res==true)
+		{
+			Assert.assertTrue(true); // if message is present , then pass test case
+			logger.info("test case passed...");
+		}
+		else 
+		{
+			logger.info("test case failed...");
+			//captureScreen("addNewCustomer", driver);
+			Assert.assertTrue(false); // if message is not present , then fail test case
+		}
+		
+		
+	
+	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

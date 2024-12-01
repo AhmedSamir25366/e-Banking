@@ -1,0 +1,24 @@
+package testCases;
+
+import java.io.IOException;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import utilities.DataProviders;
+import utilities.ExcelUtility;
+
+public class TC_LoginDDT_002 extends BaseClass {
+	
+	
+	@Test(dataProvider= "LoginData", dataProviderClass=DataProviders.class)
+	public void loginTDD()
+	{
+		
+	}
+	
+	
+
+	
+
+}

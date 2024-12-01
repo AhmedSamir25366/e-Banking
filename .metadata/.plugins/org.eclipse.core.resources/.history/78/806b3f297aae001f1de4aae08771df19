@@ -1,0 +1,15 @@
+package testCases;
+
+import org.testng.annotations.Test;
+
+public class TC_AddCustomerTest_003 extends BaseClass {
+	
+	// Action methods + validations
+	@Test
+	public void addNewCustomer()
+	{
+		
+	}
+	
+
+}

@@ -1,0 +1,19 @@
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage {
+	
+	WebDriver ldriver;
+	
+	public LoginPage(WebDriver rdriver) // we will receive remote driver from test case later
+	{
+		ldriver = rdriver;
+	}
+	
+	
+	// Locators
+	@FindBy(xpath = "//input[@name='uid']")
+	WebElement txtID;
+
+}

@@ -1,0 +1,4 @@
+04:31:56.066 [main] INFO  testCases.TC_LoginTest_001 - URL is opened
+04:31:56.130 [main] INFO  testCases.TC_LoginTest_001 - Entered username
+04:31:56.164 [main] INFO  testCases.TC_LoginTest_001 - Entered password
+04:31:57.201 [main] INFO  testCases.TC_LoginTest_001 - Login test passed

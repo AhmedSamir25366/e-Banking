@@ -1,0 +1,40 @@
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class AddCustomerPage {
+	
+	WebDriver ldriver;
+	
+	public AddCustomerPage(WebDriver rdriver) // we will receive remote driver from AddNewCustomer test case class
+	{
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+	}
+	
+	
+	// Locators
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

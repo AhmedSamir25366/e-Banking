@@ -1,0 +1,10 @@
+package pageObjects;
+
+public class LoginPage {
+	
+	
+	// Locators
+	@FindBy(xpath = "//input[@name='uid']")
+	WebElement txtID;
+
+}

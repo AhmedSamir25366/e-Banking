@@ -1,0 +1,17 @@
+package testCases;
+
+import org.testng.annotations.Test;
+
+import pageObjects.LoginPage;
+
+public class TC_LoginTest_001 extends BaseClass {
+	// Test methods
+	@Test
+	public void loginTest()
+	{
+		driver.get(baseURL);
+		
+		LoginPage lp = new LoginPage(driver);
+	}
+
+}

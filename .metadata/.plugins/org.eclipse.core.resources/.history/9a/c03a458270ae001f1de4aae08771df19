@@ -1,0 +1,28 @@
+package testCases;
+
+import java.io.IOException;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import utilities.DataProviders;
+import utilities.ExcelUtility;
+
+// Data driven test case consists of 2 methods 
+// test method which will perform login multiple times
+// data provider method which will pull the data from excel file and store the data in 
+// 2 dimensional array and throw or pass the data to test method
+public class TC_LoginDDT_002 extends BaseClass {
+	
+	// test method
+	@Test(dataProvider= "LoginData", dataProviderClass=DataProviders.class)
+	public void loginTDD()
+	{
+		
+	}
+	
+	
+
+	
+
+}
